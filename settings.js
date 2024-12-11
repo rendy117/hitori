@@ -16,7 +16,7 @@ global.botname = 'Renzz Bot'
 global.listprefix = ['+','!']
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json'
-global.pairing_code = true
+global.pairing_code = false
 
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
