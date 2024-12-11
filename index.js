@@ -64,7 +64,7 @@ async function startNazeBot() {
 			return msg?.message || ''
 		}
 		return {
-			conversation: 'Halo Saya Naze Bot'
+			conversation: 'Halo Saya Renzz Bot'
 		}
 	}
 	
@@ -185,7 +185,7 @@ async function startNazeBot() {
 		if (db.set[botNumber].anticall) {
 			for (let id of call) {
 				if (id.status === 'offer') {
-					let msg = await naze.sendMessage(id.from, { text: `Saat Ini, Kami Tidak Dapat Menerima Panggilan ${id.isVideo ? 'Video' : 'Suara'}.\nJika @${id.from.split('@')[0]} Memerlukan Bantuan, Silakan Hubungi Owner :)`, mentions: [id.from]});
+					let msg = await naze.sendMessage(id.from, { text: `Saat Ini, Kami Tidak Dapat Menerima Panggilan ${id.isVideo ? 'Video' : 'Suara'}.\nJika @${id.from.split('@')[0]} Memerlukan Bantuan, Silakan Hubungi Owner`, mentions: [id.from]});
 					await naze.sendContact(id.from, global.owner, msg);
 					await naze.rejectCall(id.id, id.from)
 				}
